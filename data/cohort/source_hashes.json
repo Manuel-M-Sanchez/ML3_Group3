@@ -1,0 +1,16 @@
+{
+  "imdb_crop.tar": {
+    "signature": {
+      "size": 7012157440,
+      "mtime_ns": 1792453581447229016
+    },
+    "sha256": "604aa17ed89eee1364ec4b8107030278b5bba96ddd81506746c0fabce6c87025"
+  },
+  "imdb_meta.tar": {
+    "signature": {
+      "size": 22937600,
+      "mtime_ns": 1792453271173321893
+    },
+    "sha256": "c32713eefdf07aa667c143eba6dcfaed7b0035628877e1cd7778fb14dcf2b74f"
+  }
+}

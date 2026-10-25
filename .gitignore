@@ -1,0 +1,25 @@
+# Dataset archives and extracted metadata/images
+*.tar
+*.tar.gz
+*.zip
+*.mat
+/imdb_crop/
+/imdb/
+
+# Generated experiment folders and model checkpoints
+/studies/
+*.pt
+*.pth
+*.ckpt
+dataset_extraction.json
+
+# Notebook and Python temporary files
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Local environments and credentials
+.venv/
+venv/
+.env
+.env.*

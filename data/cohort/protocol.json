@@ -1,0 +1,46 @@
+{
+  "training": {
+    "epochs": 10,
+    "batch_size": 16,
+    "optimizer": "AdamW",
+    "block5_lr": 1e-05,
+    "classifier_head_lr": 0.0001,
+    "weight_decay": 0.0001,
+    "precision": "float32",
+    "seeds": [
+      101,
+      202,
+      303
+    ],
+    "joint_weights": {
+      "age": 1.0,
+      "sex": 1.0
+    }
+  },
+  "selection": {
+    "age_only": "minimum validation standardized MAE",
+    "sex_only": "minimum validation BCE",
+    "joint": "minimum validation standardized MAE plus BCE"
+  },
+  "data": {
+    "age_range": [
+      0,
+      100
+    ],
+    "age_assumption": "completed years at July 1 of photograph year",
+    "split_unit": "celebrity ID",
+    "split_seeds": [
+      42,
+      43
+    ],
+    "same_eligible_images_for_all_tasks": true,
+    "age_mean_training_only": 36.24942631873143,
+    "age_std_training_only": 13.046608165450085
+  },
+  "manifest_sha256": {
+    "train": "bc01497afcef320530cc18697c0d9440787d7555d7f3cea9cee4ac57a753b3c0",
+    "validation": "b03980c33a7bcf87c8107af1f9a66b3d8e0ae7b89cffaca04515f029d1c032ba",
+    "test": "34f8b8ef1cd1fbbcfd688dca8687b15a466f66d742d491f3d21bba20221603b6"
+  },
+  "metadata_sha256": "be67a7d84df5f90893884cd7f206c8c935ceeaa2afc09b6a96076fd7f982a035"
+}
