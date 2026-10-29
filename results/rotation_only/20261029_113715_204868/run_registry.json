@@ -1,0 +1,11 @@
+{
+  "age_only:101": "/sfs/weka/scratch/ms5da/ML3_Group3/studies/vgg16_common_cohort_v1/rotation_only/20261029_113715_204868/runs/age_only_seed101_20261029_114617_955022",
+  "age_only:202": "/sfs/weka/scratch/ms5da/ML3_Group3/studies/vgg16_common_cohort_v1/rotation_only/20261029_113715_204868/runs/age_only_seed202_20261029_121412_216242",
+  "age_only:303": "/sfs/weka/scratch/ms5da/ML3_Group3/studies/vgg16_common_cohort_v1/rotation_only/20261029_113715_204868/runs/age_only_seed303_20261029_124202_831343",
+  "sex_only:101": "/sfs/weka/scratch/ms5da/ML3_Group3/studies/vgg16_common_cohort_v1/rotation_only/20261029_113715_204868/runs/sex_only_seed101_20261029_130957_953616",
+  "sex_only:202": "/sfs/weka/scratch/ms5da/ML3_Group3/studies/vgg16_common_cohort_v1/rotation_only/20261029_113715_204868/runs/sex_only_seed202_20261029_133757_384428",
+  "sex_only:303": "/sfs/weka/scratch/ms5da/ML3_Group3/studies/vgg16_common_cohort_v1/rotation_only/20261029_113715_204868/runs/sex_only_seed303_20261029_140551_597261",
+  "joint:101": "/sfs/weka/scratch/ms5da/ML3_Group3/studies/vgg16_common_cohort_v1/rotation_only/20261029_113715_204868/runs/joint_seed101_20261029_143345_410997",
+  "joint:202": "/sfs/weka/scratch/ms5da/ML3_Group3/studies/vgg16_common_cohort_v1/rotation_only/20261029_113715_204868/runs/joint_seed202_20261029_150201_822347",
+  "joint:303": "/sfs/weka/scratch/ms5da/ML3_Group3/studies/vgg16_common_cohort_v1/rotation_only/20261029_113715_204868/runs/joint_seed303_20261029_153021_655685"
+}

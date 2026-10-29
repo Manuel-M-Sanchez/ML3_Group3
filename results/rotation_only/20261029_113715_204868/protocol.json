@@ -1,0 +1,64 @@
+{
+  "age_scaling": {
+    "mean": 36.24942631873143,
+    "std": 13.046608165450085
+  },
+  "augmentation": {
+    "degrees": [
+      -10,
+      10
+    ],
+    "fill_rgb": [
+      124,
+      116,
+      104
+    ],
+    "interpolation": "bilinear",
+    "name": "rotation_only",
+    "training_only": true,
+    "validation_test_preprocessing": "baseline deterministic preprocessing"
+  },
+  "claim": "fixed recipe, same cohort, matched seeds; per-network epoch budget",
+  "cohort_protocol_sha256": "87badb0fea6631994e7e2af1234a99e4376f52a2448f7dd4639b3c5f767ddf03",
+  "manifest_sha256": {
+    "test": "34f8b8ef1cd1fbbcfd688dca8687b15a466f66d742d491f3d21bba20221603b6",
+    "train": "bc01497afcef320530cc18697c0d9440787d7555d7f3cea9cee4ac57a753b3c0",
+    "validation": "b03980c33a7bcf87c8107af1f9a66b3d8e0ae7b89cffaca04515f029d1c032ba"
+  },
+  "selection": {
+    "age_only": "minimum validation standardized MAE",
+    "joint": "minimum validation standardized MAE plus BCE",
+    "sex_only": "minimum validation BCE"
+  },
+  "tasks": [
+    "age_only",
+    "sex_only",
+    "joint"
+  ],
+  "test_metrics": [
+    "age MAE in years",
+    "sex BCE",
+    "sex error/accuracy percentages",
+    "joint weighted standardized-age MAE plus BCE"
+  ],
+  "test_policy": "evaluate all declared seeds after locking; do not tune on test",
+  "ties": "earliest epoch",
+  "training": {
+    "batch_size": 16,
+    "block5_lr": 1e-05,
+    "classifier_head_lr": 0.0001,
+    "epochs": 10,
+    "joint_weights": {
+      "age": 1.0,
+      "sex": 1.0
+    },
+    "optimizer": "AdamW",
+    "precision": "float32",
+    "seeds": [
+      101,
+      202,
+      303
+    ],
+    "weight_decay": 0.0001
+  }
+}
